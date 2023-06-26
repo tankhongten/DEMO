@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    color: chocolate;
+}
+
+input{
+    background-color: transparent; /* hoặc rgba(0,0,0,0) */
+    color:aliceblue; /* hoặc #D2691E */
+}
+
+table{
+    text-align: left;
+}
+button {
+    width: 225px; /* đặt chiều rộng là 200px */
+    height: 50px; /* đặt chiều cao là 50px */
+    padding: 10px; /* đặt khoảng cách giữa nội dung và viền là 10px */
+    font-size: 20px; /* đặt kích cỡ phông chữ là 20px */
+  }
+
+input {
+    width: 200px; /* đặt chiều rộng là 200px */
+    height: 10px; /* đặt chiều cao là 50px */
+    padding: 10px; /* đặt khoảng cách giữa nội dung và viền là 10px */
+    font-size: 16px; /* đặt kích cỡ phông chữ là 20px */
+  }
+
+#tb{
+    color:#FF0000;
+    font-size: 14px;
+}

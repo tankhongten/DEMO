@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="Name">Mèo Trắng</title>
+    <link rel="shortcut icon" href="img/meoden.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 align="center">
+        MÈO TRẮNG
+    </h1>
+    <form autocomplete="off" onsubmit="return false">
+        <table align="center" border="0" cellpadding="6"  width="200px">
+            <tr>
+                <td> 
+                    <label for="user">Tên đăng nhập:</label><input type="text" id="user" maxlength="20">
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <label for="psw">Mật khẩu:</label><input type="password" id="psw" >
+                </td>
+            </tr>
+            <tr+>
+                <td>
+                    <Button id="btn" onclick="Home()">Đăng nhập</Button>
+                </td>
+            </tr>
+            <tr> 
+                <td colspan="2" valign="top" style="text-align: center;font-size: 12px;">
+                    <a href="register.html">Chưa có tài khoản? Đăng ký</a>
+                    <br>
+                    <a href="javascript:void(0)" onclick="QuenPass()">Quên mật khẩu?</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="text-align: center;" id="tb"></div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="Name">Mèo Trắng</title>
+    <link rel="shortcut icon" href="img/meoden.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 align="center">
+        MÈO TRẮNG
+    </h1>
+    <form autocomplete="off" onsubmit="return false">
+
+        <table align="center" border="0" cellpadding="6"  width="200px">
+            <tr>
+                <td> 
+                    <label for="user">Tên đăng nhập:</label><input type="text" id="user" maxlength="20">
+                </td>
+                <td> 
+                    <label for="email">Email:</label><input type="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <label for="psw">Mật khẩu:</label><input type="password" id="psw">
+                </td>
+                <td> 
+                    <label for="sdt">SĐT:</label><input type="text" id="sdt" maxlength="10" minlength="9" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" />
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <label for="psw_xn">Xác nhận mật khẩu:</label><input type="password" id="psw_xn">
+                </td>
+                <td valign="top">
+                    Giới tính:<br>
+                        <input type="radio" style="width: auto; height: auto;" name="gt" id="nam" checked><label for="nam">Nam</label>
+                        <input type="radio" style="width: auto; height: auto;" name="gt" id="nu"><label for="nu">Nữ</label>
+                </td>
+            </tr>
+            <tr+>
+                <td colspan="2">
+                    <Button id="btn" onclick="Sub()" style="width: 460px;">Đăng ký</Button>
+                </td>
+            </tr>
+            <tr> 
+                <td colspan="2" valign="top" style="text-align: center;font-size: 12px;">
+                    <a href="login.html">Đã có tài khoản? Đăng nhập</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div style="text-align: center;" id="tb"></div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+    <script src="js/script.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
