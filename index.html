@@ -3,47 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="Name">Mèo Trắng</title>
-    <link rel="shortcut icon" href="img/meoden.ico" type="image/x-icon">
+    <title>Nguyễn Hoài Tân</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 align="center">
-        MÈO TRẮNG
-    </h1>
-    <form autocomplete="off" onsubmit="return false">
-        <table align="center" border="0" cellpadding="6"  width="200px">
-            <tr>
-                <td> 
-                    <label for="user">Tên đăng nhập:</label><input type="text" id="user" maxlength="20">
-                </td>
-            </tr>
-            <tr>
-                <td> 
-                    <label for="psw">Mật khẩu:</label><input type="password" id="psw" >
-                </td>
-            </tr>
-            <tr+>
-                <td>
-                    <Button id="btn" onclick="Home()">Đăng nhập</Button>
-                </td>
-            </tr>
-            <tr> 
-                <td colspan="2" valign="top" style="text-align: center;font-size: 12px;">
-                    <a href="register.html">Chưa có tài khoản? Đăng ký</a>
-                    <br>
-                    <a href="javascript:void(0)" onclick="QuenPass()">Quên mật khẩu?</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div style="text-align: center;" id="tb"></div>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </form>
+    <div class="main">
+        <div class="navigation">
+          <span style="--i:0;--x:-1;--y:0;">
+            <a href="https://www.facebook.com/NHT.19032004/"><ion-icon name="logo-facebook"></ion-icon></a>
+          </span>
+          <span style="--i:1;--x:1;--y:0;">
+            <a href="https://www.instagram.com/nht190304/"><ion-icon name="logo-instagram"></ion-icon></a>
+          </span>
+          <span style="--i:2;--x:0;--y:-1;">
+            <a href="mailto:admin@nguyenhoaitan.id.vn"><ion-icon name="mail"></ion-icon></a>
+          </span>
+          <span style="--i:3;--x:0;--y:1;">
+            <a href=“tel:0378895960”><ion-icon name="call"></ion-icon></a>
+          </span>
+          <span style="--i:4;--x:-1;--y:1;">
+              <a href="https://www.youtube.com/@fltan3499/"><ion-icon name="logo-youtube"></ion-icon></a>
+          </span>
+          <span style="--i:5;--x:-1;--y:-1;">
+              <a href="https://discord.gg/aN2chUdx"><ion-icon name="logo-discord"></ion-icon></a>
+          </span>
+          <span style="--i:6;--x:1;--y:-1;">
+              <a href="https://github.com/tankhongten/"><ion-icon name="logo-github"></ion-icon></a>
+          </span>
+          <span style="--i:7;--x:1;--y:1;">
+              <a href="https://www.tiktok.com/@flogoodboy"><ion-icon name="logo-tiktok"></ion-icon></a>
+          </span>
+        </div>
+        <div class="close"><ion-icon name="close-outline"></ion-icon></div>
+      </div>
+    <script type="module"			       
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> 
+    </script>
+    <script nomodule 
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">	     
+    </script>
     <script src="js/script.js"></script>
-    <script src="js/login.js"></script>
 </body>
 </html>
