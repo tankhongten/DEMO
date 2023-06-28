@@ -88,4 +88,39 @@
     scale: 1;
     transition-delay: 1s;
   }
-  
+
+    /* Elimina el margen en el elemento body */
+body {
+  margin: 0;
+}
+
+/* Establece el color de fondo del body y del canvas en negro */
+body, canvas {
+  background-color: #161a23;
+}
+
+/* Oculta la barra de desplazamiento en todos los navegadores que soporten WebKit */
+::-webkit-scrollbar {
+  display: none;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #161a23;
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(22, 26, 35, 0.5);
+}
