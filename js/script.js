@@ -1,32 +1,16 @@
-var inputs = document.getElementsByTagName("input");
-//var inputs = document.querySelectorAll("input[type='password']");
-for (var i = 0; i < inputs.length; i++) {
-  inputs[i].required = function() {
-    return false;
-  };
-  if (inputs[i].type == "password") {
-    inputs[i].onpaste = function() {
-      return false;
-    };
-    inputs[i].maxLength = 25;
-  }
+let navigation = document.querySelector('.navigation');
+let close = document.querySelector('.close');
+navigation.onclick = function(){
+    addActiveClass();
+}
+close.onclick = function(){
+  navigation.classList.remove('active')
 }
 
-var Namestr = "Mèo Trắng";
-var i = 9;
-var rs;
+// Gọi hàm addActiveClass sau 2 giây (2000 mili giây)
+setTimeout(addActiveClass, 1500);
 
-setInterval(function (){
-  if (i > 8){
-    document.getElementById('Name').innerHTML = " ";
-    i=0;
-  }
-  document.getElementById('Name').innerHTML += Namestr[i];
-  i++;
-}, 300)
-
-function reset(){
-  rs = setInterval(function () {
-      document.getElementById("tb").innerHTML = "";
-  }, 5000)
+// Hàm thêm class active cho navigation
+function addActiveClass() {
+  navigation.classList.add('active');
 }
